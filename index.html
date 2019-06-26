@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="css/main.css">
     <title>InnoDevs</title>
 
     <style>
@@ -41,6 +42,9 @@
         <div class="container">
           <div class="nav-wrapper">
             <a href="#" class="brand-logo">InnoDevs</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="#!">Que hacemos</a></li>
               <li><a href="#!">Quienes somos</a></li>
@@ -50,106 +54,108 @@
           </div>
         </div>
       </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#!">Que hacemos</a></li>
+        <li><a href="#!">Quienes somos</a></li>
+        <li><a href="#!">Portafolio</a></li>
+        <li><a href="#!">Contactanos</a></li>
+      </ul>
     </header>
 
     <main>
       <!-- Slide de Quienes somos -->
-      <div class="row">
-        <div class="col s12 no-padding">
-          <div class="slider">
-            <ul class="slides">
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/1" />
-                <!-- random image -->
-                <div class="caption center-align">
-                  <h3>Desarrollamos con proposito</h3>
-                  <h5 class="light grey-text text-lighten-3">
-                    Ayudar a pequenos y grandes negocios a mejorar sus procesos
-                    mediante soluciones hechas a medida
-                  </h5>
-                </div>
-              </li>
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/2" />
-                <!-- random image -->
-                <div class="caption left-align">
-                  <h3>Innovacion y Desarrollo</h3>
-                  <h5 class="light grey-text text-lighten-3">
-                    Desarrollamos el futuro manteniendonos al margen de las
-                    nuevas tecnologias
-                  </h5>
-                </div>
-              </li>
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/3" />
-                <!-- random image -->
-                <div class="caption right-align">
-                  <h3>La solucion ideal a tus viejos problemas</h3>
-                  <h5 class="light grey-text text-lighten-3">
-                    Somos los mejores ;)
-                  </h5>
-                </div>
-              </li>
-            </ul>
+      <section>
+        <div class="row">
+          <div class="col s12 no-padding">
+            <div class="slider">
+              <ul class="slides">
+                <li style="background: url('https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center / cover;">
+                  
+                  <div class="caption center-align">
+                    <h3>Desarrollamos con proposito</h3>
+                    <h5 class="light grey-text text-lighten-3">
+                      Ayudar a pequenos y grandes negocios a mejorar sus procesos
+                      mediante soluciones hechas a medida
+                    </h5>
+                  </div>
+                </li>
+                <li style="background: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center / cover;">
+                  
+                  <div class="caption left-align">
+                    <h3>Innovacion y Desarrollo</h3>
+                    <h5 class="light grey-text text-lighten-3">
+                      Desarrollamos el futuro manteniendonos al margen de las
+                      nuevas tecnologias
+                    </h5>
+                  </div>
+                </li>
+                <li style="background: url('https://images.pexels.com/photos/1661004/pexels-photo-1661004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center / cover;">
+                  <!-- random image -->
+                  <div class="caption right-align">
+                    <h3>La solucion ideal a tus viejos problemas</h3>
+                    <h5 class="light grey-text text-lighten-3">
+                      Somos los mejores ;)
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Fin de slides de quienes somos -->
 
-      <!-- Slides de nuestros proyectos -->
-      <div class="row">
-        <div class="col s12 no-padding">
-          <div class="slider">
-            <ul class="slides">
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/3" />
-                <!-- random image -->
-                <div class="caption right-align">
-                  <h3>La solucion ideal a tus viejos problemas</h3>
-                  <h5 class="light grey-text text-lighten-3">
-                    Somos los mejores ;)
-                  </h5>
+      <!-- Seccion de proyectos -->
+      <section class="project_container">
+        <div class="row grey darken-4 p-2">
+          <div class="col s12">
+            <h1 class="project_title">Proyectos Realizados por el equipo</h1>
+            <div class="project_users">
+              <div class="daniel_project one">
+                <div class="project">
+                  <div class="tecnologies"></div>
                 </div>
-              </li>
-
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/2" />
-                <!-- random image -->
-                <div class="caption left-align">
-                  <h3>Innovacion y Desarrollo</h3>
-                  <h5 class="light grey-text text-lighten-3">
-                    Desarrollamos el futuro manteniendonos al margen de las
-                    nuevas tecnologias
-                  </h5>
+              </div>
+              <div class="bet_project one">
+                <div class="project">
+                  <div class="tecnologies"></div>
                 </div>
-              </li>
-
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/1" />
-                <!-- random image -->
-                <div class="caption center-align">
-                  <h3>Desarrollamos con proposito</h3>
-                  <h5 class="light grey-text text-lighten-3">
-                    Ayudar a pequenos y grandes negocios a mejorar sus procesos
-                    mediante soluciones hechas a medida
-                  </h5>
+              </div>
+              <div class="angel_project one">
+                <div class="project">
+                  <div class="tecnologies"></div>
                 </div>
-              </li>
-            </ul>
+              </div>
+              <div class="laura_project one">
+                <div class="project">
+                  <div class="tecnologies"></div>
+                </div>
+              </div>
+              <div class="jesus_project one">
+                <div class="project">
+                  <div class="tecnologies"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Fin de slides sobre proyectos -->
+      </section>
 
-      <!-- Inicio de soluciones -->
-      <div class="row grey darken-4 text-white p-2">
-        <div class="col s12 m7 l7">
-          <h3>Problema 1</h3>
+      <section class="users">
+        <div class="row">
+          <div class="col s12">
+            <h3>Users</h3>
+            <div class="userss">
+              <div class="daniel one"></div>
+              <div class="bet one"></div>
+              <div class="angel one"></div>
+              <div class="laura one"></div>
+              <div class="jesus one"></div>
+            </div>
+          </div>
         </div>
-        <div class="col s12 m5 l5">
-          Problemas
-        </div>
-      </div>
+      </section>
 
       <!-- Contacto -->
       <div class="row grey lighten-2">
@@ -186,6 +192,7 @@
           indicators: false,
           duration: 1500
         });
+        M.Sidenav.init(document.querySelectorAll('.sidenav'), {});
       });
     </script>
   </body>
