@@ -30,18 +30,20 @@ header h3{
 
 }
 /* header */
-
-
-
-
-/* soluciones */
+.caption{
+  background-color: rgba(0,0,0,0.75)
+}
+/* projects */
 
 /* realizado por el equipo */
 main{
   margin: 0px 15px !important;
 }
-.project_title h1 {
-
+.project_container{
+  margin-bottom: 5px !important;
+}
+.project_title {
+  margin: 20px 0 !important;
   font-size: 25px !important;
 }
 .project_users{
@@ -49,44 +51,167 @@ main{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(2,1fr);
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  margin-bottom: 10px !important;
 
 }
 .angel_project{
   grid-row: 1/ span 2;
 }
-/* .one{  border:1px solid red;} */
+
+.container_img{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.container_img img {
+  margin-top: 10px !important;
+  width: 90%;
+  height: 90%;
+}
+.description_project{
+  color: white;
+}
+.description_project h1{
+  text-align: center;
+}
+.description_project p{
+    margin-left: 15px!important;
+}
+.tecnologies {
+  color: white;
+  margin-left: 5px;
+}
+.tecnologies ul{
+  margin-left: 15px !important;
+}
+.daniel_project ,.jesus_project{
+  background-color: lightgray;
+}
+.bet_project, .laura_project{
+  background-color: gray;
+}
+
 /* users */
 .users{
   margin: 0 30px;
-  height: 500px;
+  height: 450px;
+  background: lightgray;
 }
 .users h3{
   text-align: center!important;
   font-size: 20px!important;
   margin: 20px 0px !important;
+  color: black !important;
 }
 .userss{
-  height: 450px;
+  height: 350px;
   display: grid;
   grid-template-columns: repeat(5,1fr);
-
+  grid-column-gap: 5px;
 }
 .person{
-  padding-left: 10px;
+  background-color: white;
+  /* border: 1px solid red; */
+}
+.img_container{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .img_container img{
   margin-top: 10px !important;
-  margin-left: 35px !important;
-  width: 150px;
-  height: 150px;
+  /* margin-left: 35px !important; */
+  width: 90%;
+  height: 90%;
+}
+.container_user_team{
+  margin-top: 5px !important;
 }
 .person h1 {
+  color: gray !important;
   text-align: center;
 }
 .person h4{
   margin-top: 10px !important;
+  text-align: center;
+}
+.person p {
+  padding: 5px !important;
+}
+.person ul{
+  padding: 5px 5px;
+  list-style-type: none;
 }
 .conctat{
   height: 200px;
 }
 /* footer */
+/* responsive */
+@media screen and (max-width: 780px) {
+  .project_users{
+    height: 2400px;
+    display: block;
+  }
+  .one{
+    margin-bottom: 10px !important;
+  }
+  .users{
+    height: 400px;
+  }
+  .userss{
+    height: 300px;
+    display: grid;
+  }
+
+}
+@media screen and (max-width: 600px) {
+
+  .users{
+    height: 720px;
+  }
+  .userss{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 5px;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  .project_users{
+    height: 1800px;
+    display: block;
+  }
+  .users{
+    height: 2350px;
+  }
+  .userss{
+    display: block;
+  }
+  .person{
+    margin-bottom: 20px !important;
+  }
+  .person h1, .person h4 {
+  font-size: 20px;
+  }
+
+  .person p, .person ul {
+  font-size: 15px;
+  }
+  .img_container img{
+    margin-top: 30px !important;
+    width: 80%;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .project_users{
+    height: 2000px;
+    display: block;
+  }
+  .users{
+    height: 2100px;
+  }
+}
