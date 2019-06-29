@@ -149,6 +149,11 @@ main{
 }
 /* footer */
 /* responsive */
+@media screen and (min-width: 1200px) {
+  .brand-logo{
+    padding: 10px !important;
+  }
+}
 @media screen and (max-width: 780px) {
   .project_users{
     height: 2400px;
@@ -163,6 +168,10 @@ main{
   .userss{
     height: 300px;
     display: grid;
+  }
+
+  .brand-logo{
+
   }
 
 }
@@ -214,4 +223,18 @@ main{
   .users{
     height: 2100px;
   }
+}
+
+/* Personalización materialize*/
+.azul{
+  background-color: #03A9F4 !important; 
+}
+.slider .slides li .caption {
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    padding: 10px;
 }
