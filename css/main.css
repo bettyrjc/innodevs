@@ -29,10 +29,25 @@ header h3{
   font-size: 15px !important ;
 
 }
+.container{
+  margin: 0 62px !important;
+}
+
 /* header */
 .caption{
   background-color: rgba(0,0,0,0.75)
 }
+/* tecnologies */
+
+.tecnologies{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tecnologies img {
+  width: 45px;
+}
+/* fin de tecnologies */
 /* projects */
 
 /* realizado por el equipo */
@@ -115,6 +130,12 @@ main{
   background-color: white;
   /* border: 1px solid red; */
 }
+.person  a{
+ 
+  color: black;
+} .person p{
+  text-align: center;
+}
 .img_container{
   display: flex !important;
   justify-content: center !important;
@@ -150,6 +171,9 @@ main{
 /* footer */
 /* responsive */
 @media screen and (max-width: 780px) {
+  .tecnologies img {
+    width: 35px;
+  }
   .project_users{
     height: 2400px;
     display: block;
@@ -167,7 +191,9 @@ main{
 
 }
 @media screen and (max-width: 600px) {
-
+  .tecnologies img {
+    width: 25px;
+  }
   .users{
     height: 720px;
   }
@@ -180,6 +206,9 @@ main{
 }
 
 @media screen and (max-width: 420px) {
+  .tecnologies img {
+    width: 25px;
+  }
   .project_users{
     height: 1800px;
     display: block;
@@ -207,6 +236,9 @@ main{
   }
 }
 @media screen and (max-width: 320px) {
+  .tecnologies img {
+    width: 24px;
+  }
   .project_users{
     height: 2000px;
     display: block;
