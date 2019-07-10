@@ -133,29 +133,28 @@
               <div class="angel_project one">
                 <div class="project">
                 <div class="container_img">
-                  <img src="img/BET.png" alt="">
+                  <img src="img/ang.png" alt="">
                 </div>
                   <div class="description_project">
-                    <h1><a href="https://bettyrjc.github.io/betask/">Angel</a></h1>
+                    <h1><a href="https://rimeim.com/">Rimeim</a></h1>
                     <!-- <p><a href="https://bettyrjc.github.io/betask/">Link</a></p> -->
                   </div>
                   <div class="tecnologies">
                       <ul>
-                          <li><img src="img/tecnologies/html-5.png" alt="html"></li>
-                          <li><img src="img/tecnologies/css-3.png" alt="html"></li>
-                          <li><img src="img/tecnologies/js.png" alt="html"></li>
+                          <li><img src="img/tecnologies/mysql.png" alt="html"></li>
+                          <li><img src="img/tecnologies/react.png" alt="html"></li>
+                          <li><img src="img/tecnologies/php.png" alt="html"></li>
                         </ul>
                   </div>
                 </div>
               </div>
-              <div class="laura_project one">
+              <div class="daniel_project one">
                 <div class="project">
                 <div class="container_img">
-                  <img src="img/BET.png" alt="">
+                  <img src="img/dan.png" alt="">
                 </div>
                   <div class="description_project">
-                    <h1><a href="https://bettyrjc.github.io/betask/">Laura</a></h1>
-                    <!-- <p><a href="https://bettyrjc.github.io/betask/">Link</a></p> -->
+                    <h1><a href="http://heysoypaez.com/">Página Web de Daniel.</a></h1>
                   </div>
                   <div class="tecnologies">
                     <ul>
@@ -223,8 +222,8 @@
                   <img src="img/man.png" alt="">
                 </div>
                 <div class="container_user_team">
-                  <h1>Daniel G.</h1>
-                  <p>Link: <a href="https://github.com/bettyrjc/i">Github</a></p>
+                  <h1>Daniel P.</h1>
+                  <p>Link: <a href="https://heysoypaez.github.io/">Github</a></p>
                   <p> 19 años, y esta e el equipo de frontend</p>
                   
                 </div>
@@ -235,7 +234,7 @@
                 </div>
                 <div class="container_user_team">
                   <h1>Betty J.</h1>
-                  <p>Link: <a href="https://github.com/bettyrjc/i">Github</a></p>
+                  <p>Link: <a href="https://github.com/bettyrjc/">Github</a></p>
                   <p>21 años,pertenece al equipo fronted</p>
 
                 </div>
@@ -246,7 +245,7 @@
                 </div>
                 <div class="container_user_team">
                   <h1>Angel H.</h1>
-                  <p>Link: <a href="https://github.com/bettyrjc/i">Github</a></p>
+                  <p>Link: <a href="https://github.com/Angel998">Github</a></p>
                   <p>21 años, pertenece al equipo equipo de Backend</p>
 
                 </div>
@@ -257,7 +256,7 @@
                 </div>
                 <div class="container_user_team">
                   <h1>Laura E.</h1>
-                  <p>Link: <a href="https://github.com/bettyrjc/i">Portafolio</a></p>
+                  <p>Link: <a href="https://github.com/lalitacomics">Portafolio</a></p>
                   <p>35 años, pertenece al equipo de diseño/frontend</p>
                 </div>
               </div>
@@ -267,7 +266,7 @@
                 </div>
                 <div class="container_user_team">
                   <h1>Jesus R.</h1>
-                  <p>Link: <a href="https://github.com/bettyrjc/i">Github</a></p>
+                  <p>Link: <a href="https://github.com/lyondeveloper/">Github</a></p>
                   <p>19 años, pertenece al equipo de Backend.</p>
 
                 </div>
@@ -277,17 +276,27 @@
       </section>
 
       <!-- Contacto -->
-      <div class="row grey lighten-2 conctat">
-        <div class="col s12 m6 p-2 ">
+      <div class="row  contact">
+        <div class="col s12 m6 p-2" >
           <h4 class="text-center">
-            <i class="material-icons" style="font-size: 40px;">email</i>
-            Contactanos
+            <a id="form"><i class="material-icons" style="font-size: 40px;">email</i>
+              Contactanos</a> 
           </h4>
-        </div>
+        
+
+        <form action="" id="form_show" class="form form_class">
+          <label for="">Correo</label>
+          <input type="text" placeholder="tucorreo@loquesea.com">
+          <label for="">Lo que nos quieres decir</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="Enviar" id="btn" class="btn light">
+        </form>
+      </div>
+      <!-- Testimonios -->
         <div class="col s12 m6 p-2">
           <h4 class="text-center">
-            <i class="material-icons" style="font-size: 40px;">message</i>
-            Testimonios
+            <a><i class="material-icons" style="font-size: 40px;">message</i>
+            Testimonios</a>
           </h4>
         </div>
       </div>
@@ -313,6 +322,20 @@
         });
         M.Sidenav.init(document.querySelectorAll('.sidenav'), {});
       });
+
+      const form = document.getElementById('form');
+      form.addEventListener('click', showForm);
+
+      function showForm(){
+        const show = document.querySelector('#form_show')
+        const contact = document.querySelector('.contact')
+        if (show.classList.contains('active')) {
+          show.classList.remove('active')
+        }else{
+          show.classList.add('active')
+          contact.style.height="250px"
+        }
+      }
     </script>
   </body>
 </html>
