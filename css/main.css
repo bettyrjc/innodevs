@@ -39,6 +39,8 @@ header h3{
 /* tecnologies */
 .tech_section{
   margin-top: 5px !important;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .tecnologies{
   display: flex;
@@ -47,7 +49,7 @@ header h3{
   margin-bottom: 5px !important;
 }
 .tecnologies img {
-  width: 45px;
+  width: 80px;
 }
 /* fin de tecnologies */
 /* projects */
@@ -343,4 +345,14 @@ main{
     width: 100%;
     opacity: 0;
     padding: 10px;
+}
+
+/* Formulario */
+form .row {
+  padding-bottom: 20px !important;
+}
+
+.bg-contact {
+  background: url('../img/start_up.jpg') no-repeat center center / cover;
+  min-height: 100px !important;
 }
